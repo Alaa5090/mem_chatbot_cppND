@@ -3,3 +3,4 @@
 #include <wx/bitmap.h>
 #include <string>
 class GraphNode;
+class ChatLogic;
