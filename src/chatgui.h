@@ -52,7 +52,9 @@ void paintEvent(wxPaintEvent &evt);
 };
 
 class ChatBotApp : public wxApp{
-    
+   public:
+   virtual bool OnInit();
+}; 
 }
 
 
