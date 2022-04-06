@@ -35,11 +35,13 @@ class ChatBotFrame : public wxFrame{
       wxTextCtrl *_userTextCtrl;
  void OnEnter(wxCommandEvent &WXUNUSED(event));
 
+      public:
+       ChatBotFrame(const wxString &title);
+};
 
 
 
 
-}
 
 
 
