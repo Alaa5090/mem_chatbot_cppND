@@ -23,7 +23,10 @@ public:
     DECLARE_EVENT_TABLE()
 };
 class ChatBotPanelDialogItem : public wxPanel{
-    
+    private:
+        wxStaticBitmap *_chatBotImg;
+        wxStaticText *_chatBotTxt;
+
 }
 
  
