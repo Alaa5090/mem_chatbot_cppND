@@ -7,4 +7,8 @@ class ChatLogic;
 class ChatBot{
     private:
      wxBitmap *_image;
+    GraphNode *_currentNode;
+    GraphNode *_rootNode;
+    ChatLogic *_chatLogic;
+
 }
