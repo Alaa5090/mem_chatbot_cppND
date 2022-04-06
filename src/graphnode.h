@@ -9,5 +9,7 @@ class GraphNode{
 private:
 
      std::vector<std::unique_ptr<GraphEdge>> _childEdges;
+      std::vector<GraphEdge *> _parentEdges;  
+    ChatBot _chatBot;
 
 }
