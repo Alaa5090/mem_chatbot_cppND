@@ -44,7 +44,12 @@ wxBitmap _image;
 public:
   ChatBotFrameImagePanel(wxFrame *parent);
 
+void paintEvent(wxPaintEvent &evt);
+    void paintNow();
+    void render(wxDC &dc);
 
+    DECLARE_EVENT_TABLE()
+};
 
 
 
