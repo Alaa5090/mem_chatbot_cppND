@@ -11,5 +11,7 @@ private:
      std::vector<std::unique_ptr<GraphEdge>> _childEdges;
       std::vector<GraphEdge *> _parentEdges;  
     ChatBot _chatBot;
+int _id;
+    std::vector<std::string> _answers;
 
 }
