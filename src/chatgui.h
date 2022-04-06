@@ -33,6 +33,7 @@ class ChatBotFrame : public wxFrame{
      private:
       ChatBotPanelDialog *_panelDialog;
       wxTextCtrl *_userTextCtrl;
+ void OnEnter(wxCommandEvent &WXUNUSED(event));
 
 
 
