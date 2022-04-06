@@ -39,6 +39,9 @@ class ChatBotFrame : public wxFrame{
        ChatBotFrame(const wxString &title);
 };
 
+class ChatBotFrameImagePanel : public wxPanel{
+    
+}
 
 
 
