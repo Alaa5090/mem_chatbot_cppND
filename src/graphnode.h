@@ -13,5 +13,7 @@ private:
     ChatBot _chatBot;
 int _id;
     std::vector<std::string> _answers;
-
+public:
+GraphNode(int id);
+    ~GraphNode();
 }
