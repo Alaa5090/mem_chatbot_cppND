@@ -22,7 +22,8 @@ public:
  ChatLogic();
     ~ChatLogic();
 
-
+void SetPanelDialogHandle(ChatBotPanelDialog *panelDialog);
+    void SetChatbotHandle(ChatBot *chatbot);
 
 
 }
