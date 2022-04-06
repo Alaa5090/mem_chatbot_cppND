@@ -3,3 +3,6 @@
 #include <wx/wx.h>
 #include <memory>
 class ChatLogic; 
+class ChatBotPanelDialog : public wxScrolledWindow{
+    
+}
