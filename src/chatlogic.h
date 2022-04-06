@@ -18,6 +18,9 @@ GraphNode *_currentNode;
  typedef std::vector<std::pair<std::string, std::string>> tokenlist;
 template <typename T>
     void AddAllTokensToElement(std::string tokenID, tokenlist &tokens, T &element);
+public:
+ ChatLogic();
+    ~ChatLogic();
 
 
 
