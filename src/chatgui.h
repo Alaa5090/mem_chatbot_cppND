@@ -4,8 +4,13 @@
 #include <memory>
 class ChatLogic; 
 class ChatBotPanelDialog : public wxScrolledWindow{
-
+private:
      wxBoxSizer *_dialogSizer;
     wxBitmap _image;
     std::unique_ptr<ChatLogic> _chatLogic;
+public:
+ChatBotPanelDialog(wxWindow *parent, wxWindowID id);
+    ~ChatBotPanelDialog();
+
+
 }
