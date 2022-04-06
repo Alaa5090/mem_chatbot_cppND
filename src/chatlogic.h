@@ -12,5 +12,7 @@ class ChatLogic
 {
     private:
      std::vector<std::unique_ptr<GraphNode>> _nodes;
-
+GraphNode *_currentNode;
+    ChatBot *_chatBot;
+    ChatBotPanelDialog *_panelDialog;
 }
