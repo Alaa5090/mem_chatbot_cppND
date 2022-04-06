@@ -51,9 +51,12 @@ void paintEvent(wxPaintEvent &evt);
     DECLARE_EVENT_TABLE()
 };
 
-
-
+class ChatBotApp : public wxApp{
+    
 }
+
+
+
 
 
 
