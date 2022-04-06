@@ -5,3 +5,9 @@
 #include <string>
 #include "chatbot.h"
 class GraphEdge;
+class GraphNode{
+private:
+
+     std::vector<std::unique_ptr<GraphEdge>> _childEdges;
+
+}
