@@ -7,3 +7,10 @@
 class ChatBot;
 class GraphEdge;
 class GraphNode;
+
+class ChatLogic
+{
+    private:
+     std::vector<std::unique_ptr<GraphNode>> _nodes;
+
+}
