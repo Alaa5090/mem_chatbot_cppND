@@ -11,5 +11,5 @@ class ChatBot{
     GraphNode *_rootNode;
     ChatLogic *_chatLogic;
 int ComputeLevenshteinDistance(std::string s1, std::string s2);
-
+   ChatBot();
 }
