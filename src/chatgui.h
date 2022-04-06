@@ -22,6 +22,11 @@ public:
 
     DECLARE_EVENT_TABLE()
 };
+class ChatBotPanelDialogItem : public wxPanel{
+    
+}
+
+ 
 
 
 
