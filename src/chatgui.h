@@ -29,6 +29,10 @@ class ChatBotPanelDialogItem : public wxPanel{
     public:
      ChatBotPanelDialogItem(wxPanel *parent, wxString text, bool isFromUser);
 };
+class ChatBotFrame : public wxFrame{
+    
+}
+
 
 
  
