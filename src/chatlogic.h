@@ -15,4 +15,9 @@ class ChatLogic
 GraphNode *_currentNode;
     ChatBot *_chatBot;
     ChatBotPanelDialog *_panelDialog;
+ typedef std::vector<std::pair<std::string, std::string>> tokenlist;
+
+
+
+
 }
