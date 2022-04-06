@@ -12,5 +12,6 @@ public:
 ChatBotPanelDialog(wxWindow *parent, wxWindowID id);
     ~ChatBotPanelDialog();
 
+ ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }
 
 }
