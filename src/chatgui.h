@@ -26,8 +26,10 @@ class ChatBotPanelDialogItem : public wxPanel{
     private:
         wxStaticBitmap *_chatBotImg;
         wxStaticText *_chatBotTxt;
+    public:
+     ChatBotPanelDialogItem(wxPanel *parent, wxString text, bool isFromUser);
+};
 
-}
 
  
 
