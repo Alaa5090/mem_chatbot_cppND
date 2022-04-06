@@ -13,5 +13,10 @@ ChatBotPanelDialog(wxWindow *parent, wxWindowID id);
     ~ChatBotPanelDialog();
 
  ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }
+void paintEvent(wxPaintEvent &evt);
+    void paintNow();
+    void render(wxDC &dc);
+
+
 
 }
