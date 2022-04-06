@@ -16,6 +16,8 @@ GraphNode *_currentNode;
     ChatBot *_chatBot;
     ChatBotPanelDialog *_panelDialog;
  typedef std::vector<std::pair<std::string, std::string>> tokenlist;
+template <typename T>
+    void AddAllTokensToElement(std::string tokenID, tokenlist &tokens, T &element);
 
 
 
