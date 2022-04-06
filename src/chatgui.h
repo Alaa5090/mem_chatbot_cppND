@@ -40,7 +40,12 @@ class ChatBotFrame : public wxFrame{
 };
 
 class ChatBotFrameImagePanel : public wxPanel{
-    
+wxBitmap _image;
+
+
+
+
+
 }
 
 
