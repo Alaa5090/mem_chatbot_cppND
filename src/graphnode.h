@@ -22,5 +22,9 @@ GraphNode(int id);
     GraphEdge *GetChildEdgeAtIndex(int index);
     std::vector<std::string> GetAnswers() { return _answers; }
     int GetNumberOfParents() { return _parentEdges.size(); }
+    void AddToken(std::string token); // add answers to list
+    void AddEdgeToParentNode(GraphEdge *edge);
+    void AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge);
+
 
 }
