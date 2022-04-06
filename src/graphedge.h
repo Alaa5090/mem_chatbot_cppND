@@ -4,3 +4,8 @@
 #include <vector>
 #include <string>
 class GraphNode;
+class GraphEdge{
+private:
+    GraphNode *_childNode;
+    GraphNode *_parentNode;
+};
