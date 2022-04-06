@@ -4,3 +4,7 @@
 #include <string>
 class GraphNode;
 class ChatLogic;
+class ChatBot{
+    private:
+     wxBitmap *_image;
+}
