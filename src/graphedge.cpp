@@ -8,3 +8,7 @@ void GraphEdge::SetChildNode(GraphNode *childNode)
 {
     _childNode = childNode;
 }
+void GraphEdge::SetParentNode(GraphNode *parentNode)
+{
+    _parentNode = parentNode;
+}
