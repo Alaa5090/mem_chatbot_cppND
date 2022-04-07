@@ -30,4 +30,4 @@ void LoadAnswerGraphFromFile(std::string filename);
     void SendMessageToUser(std::string message);
     wxBitmap *GetImageFromChatbot();
 };
-}
+#endif

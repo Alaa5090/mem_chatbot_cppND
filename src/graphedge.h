@@ -20,4 +20,4 @@ public:
     void AddToken(std::string token);
 };
 
-};
+#endif

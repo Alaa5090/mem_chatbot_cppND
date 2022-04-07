@@ -22,13 +22,13 @@ int ComputeLevenshteinDistance(std::string s1, std::string s2);
 
     ChatBot &operator=(ChatBot &src);
     ChatBot &operator=(ChatBot &&src);
-void SetCurrentNode(GraphNode *node);
+    void SetCurrentNode(GraphNode *node);
     void SetRootNode(GraphNode *rootNode) { _rootNode = rootNode; }
     void SetChatLogicHandle(ChatLogic *chatLogic) { _chatLogic = chatLogic; }
     wxBitmap *GetImageHandle() { return _image; }
- void ReceiveMessageFromUser(std::string message);
+    void ReceiveMessageFromUser(std::string message);
 };
-
+     #endif
    
 
 }
