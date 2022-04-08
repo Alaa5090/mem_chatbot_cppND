@@ -80,4 +80,13 @@ wxString imgFile = imgBasePath + "sf_bridge.jpg";
     dc.DrawBitmap(_image, 0, 0, false);
 
 }
+ BEGIN_EVENT_TABLE(ChatBotPanelDialog, wxPanel)
+EVT_PAINT(ChatBotPanelDialog::paintEvent) 
+END_EVENT_TABLE()
+ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
+    : wxScrolledWindow(parent, id)
+{
+ _dialogSizer = new wxBoxSizer(wxVERTICAL);
+    this->SetSizer(_dialogSizer);
+
 
