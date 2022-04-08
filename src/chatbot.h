@@ -28,7 +28,8 @@ int ComputeLevenshteinDistance(std::string s1, std::string s2);
     wxBitmap *GetImageHandle() { return _image; }
     void ReceiveMessageFromUser(std::string message);
 };
+
      #endif
    
 
-}
+
