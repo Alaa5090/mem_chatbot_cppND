@@ -45,5 +45,6 @@ void ChatBotFrame::OnEnter(wxCommandEvent &WXUNUSED(event)){
 
 wxString userText = _userTextCtrl->GetLineText(0);
 
+ _panelDialog->AddDialogItem(userText, true);
 
 }
