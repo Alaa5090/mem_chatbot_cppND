@@ -22,3 +22,8 @@ bool ChatBotApp::OnInit()
 
     return true;
 }
+
+ChatBotFrame::ChatBotFrame(const wxString &title) : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(width, height))
+{
+    
+}
