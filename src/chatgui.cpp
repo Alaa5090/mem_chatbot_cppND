@@ -27,5 +27,7 @@ ChatBotFrame::ChatBotFrame(const wxString &title) : wxFrame(NULL, wxID_ANY, titl
 {
     ChatBotFrameImagePanel *ctrlPanel = new ChatBotFrameImagePanel(this);
    _panelDialog = new ChatBotPanelDialog(ctrlPanel, wxID_ANY);
-
+    int idTextXtrl = 1;
+    _userTextCtrl = new wxTextCtrl(ctrlPanel, idTextXtrl, "", wxDefaultPosition, wxSize(width, 50), wxTE_PROCESS_ENTER, wxDefaultValidator, wxTextCtrlNameStr);
+    Connect(idTextXtrl, wxEVT_TEXT_ENTER, wxCommandEventHandler(ChatBotFrame::OnEnter));
 }
