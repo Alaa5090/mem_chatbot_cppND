@@ -48,4 +48,7 @@ wxString userText = _userTextCtrl->GetLineText(0);
  _panelDialog->AddDialogItem(userText, true);
 
    _userTextCtrl->Clear();
+
+   _panelDialog->GetChatLogicHandle()->SendMessageToChatbot(std::string(userText.mb_str()));
+
 }
