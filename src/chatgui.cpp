@@ -11,3 +11,14 @@ const int height = 736;
 
 IMPLEMENT_APP(ChatBotApp);
 
+std::string dataPath = "../";
+std::string imgBasePath = dataPath + "images/";
+
+bool ChatBotApp::OnInit()
+{
+    
+    ChatBotFrame *chatBotFrame = new ChatBotFrame(wxT("Udacity ChatBot"));
+    chatBotFrame->Show(true);
+
+    return true;
+}
