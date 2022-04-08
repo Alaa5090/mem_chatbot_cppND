@@ -91,3 +91,5 @@ END_EVENT_TABLE()
 
   wxInitAllImageHandlers();
 _chatLogic = std::make_unique<ChatLogic>();
+
+_chatLogic->SetPanelDialogHandle(this);
