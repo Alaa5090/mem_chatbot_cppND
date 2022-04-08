@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 #include "chatbot.h"
 class GraphEdge;
 class GraphNode{
@@ -26,6 +27,7 @@ GraphNode(int id);
     void AddEdgeToParentNode(GraphEdge *edge);
     void AddEdgeToChildNode(std::unique_ptr<GraphEdge> edge);
     void MoveChatbotHere(ChatBot chatbot);
+    void MoveChatbotToNewNode(GraphNode *newNode);
 
 };
 #endif
