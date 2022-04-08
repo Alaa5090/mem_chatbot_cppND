@@ -30,4 +30,10 @@ ChatBotFrame::ChatBotFrame(const wxString &title) : wxFrame(NULL, wxID_ANY, titl
     int idTextXtrl = 1;
     _userTextCtrl = new wxTextCtrl(ctrlPanel, idTextXtrl, "", wxDefaultPosition, wxSize(width, 50), wxTE_PROCESS_ENTER, wxDefaultValidator, wxTextCtrlNameStr);
     Connect(idTextXtrl, wxEVT_TEXT_ENTER, wxCommandEventHandler(ChatBotFrame::OnEnter));
+     wxBoxSizer *vertBoxSizer = new wxBoxSizer(wxVERTICAL);
+    vertBoxSizer->AddSpacer(90);
+    vertBoxSizer->Add(_panelDialog, 6, wxEXPAND | wxALL, 0);
+    vertBoxSizer->Add(_userTextCtrl, 1, wxEXPAND | wxALL, 5);
+    ctrlPanel->SetSizer(vertBoxSizer);
+
 }
