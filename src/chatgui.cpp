@@ -93,3 +93,5 @@ END_EVENT_TABLE()
 _chatLogic = std::make_unique<ChatLogic>();
 
 _chatLogic->SetPanelDialogHandle(this);
+
+ _chatLogic->LoadAnswerGraphFromFile(dataPath + "src/answergraph.txt");
