@@ -122,5 +122,32 @@ void ChatBotPanelDialog::PrintChatbotResponse(std::string response){
     AddDialogItem(botText, false);
 }
 
+void ChatBotPanelDialog::paintEvent(wxPaintEvent &evt){
+
+    wxPaintDC dc(this);
+    render(dc);
+}
+void ChatBotPanelDialog::paintNow(){
+
+    wxClientDC dc(this);
+    render(dc);
+}
+void ChatBotPanelDialog::render(wxDC &dc){
+
+    wxImage image;
+    image.LoadFile(imgBasePath + "sf_bridge_inner.jpg");
+
+    wxSize sz = this->GetSize();
+    wxImage imgSmall = image.Rescale(sz.GetWidth(), sz.GetHeight(), wxIMAGE_QUALITY_HIGH);
+
+    _image = wxBitmap(imgSmall);
+    dc.DrawBitmap(_image, 0, 0, false);
+}
+ChatBotPanelDialogItem::ChatBotPanelDialogItem(wxPanel *parent, wxString text, bool isFromUser)
+    : wxPanel(parent, -1, wxPoint(-1, -1), wxSize(-1, -1), wxBORDER_NONE)
+{
+     wxBitmap *bitmap = isFromUser == true ? nullptr : ((ChatBotPanelDialog*)parent)->GetChatLogicHandle()->GetImageFromChatbot(); 
+
+
 
 
