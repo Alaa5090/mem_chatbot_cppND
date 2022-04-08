@@ -73,5 +73,11 @@ wxString imgFile = imgBasePath + "sf_bridge.jpg";
     wxImage image;
     image.LoadFile(imgFile);
 
+    wxSize sz = this->GetSize();
+    wxImage imgSmall = image.Rescale(sz.GetWidth(), sz.GetHeight(), wxIMAGE_QUALITY_HIGH);
+    _image = wxBitmap(imgSmall);
+    
+    dc.DrawBitmap(_image, 0, 0, false);
+
 }
 
