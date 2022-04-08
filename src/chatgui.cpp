@@ -41,3 +41,9 @@ ChatBotFrame::ChatBotFrame(const wxString &title) : wxFrame(NULL, wxID_ANY, titl
 
      this->Centre();
 }
+void ChatBotFrame::OnEnter(wxCommandEvent &WXUNUSED(event)){
+
+wxString userText = _userTextCtrl->GetLineText(0);
+
+
+}
