@@ -116,4 +116,11 @@ void ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser){
     this->DoScroll(0, sy);
 
 }
+void ChatBotPanelDialog::PrintChatbotResponse(std::string response){
+
+    wxString botText(response.c_str(), wxConvUTF8);
+    AddDialogItem(botText, false);
+}
+
+
 
