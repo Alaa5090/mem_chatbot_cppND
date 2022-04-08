@@ -50,5 +50,16 @@ wxString userText = _userTextCtrl->GetLineText(0);
    _userTextCtrl->Clear();
 
    _panelDialog->GetChatLogicHandle()->SendMessageToChatbot(std::string(userText.mb_str()));
+}
+BEGIN_EVENT_TABLE(ChatBotFrameImagePanel, wxPanel)
+EVT_PAINT(ChatBotFrameImagePanel::paintEvent) // catch paint events
+END_EVENT_TABLE()
 
+ChatBotFrameImagePanel::ChatBotFrameImagePanel(wxFrame *parent) : wxPanel(parent){
+}
+
+void ChatBotFrameImagePanel::paintEvent(wxPaintEvent &evt)
+{
+    wxPaintDC dc(this);
+    render(dc);
 }
