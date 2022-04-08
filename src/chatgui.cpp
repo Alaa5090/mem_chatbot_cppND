@@ -69,7 +69,9 @@ void ChatBotFrameImagePanel::paintNow()
     render(dc);
 }
 void ChatBotFrameImagePanel::render(wxDC &dc){
+wxString imgFile = imgBasePath + "sf_bridge.jpg";
+    wxImage image;
+    image.LoadFile(imgFile);
 
-    
 }
 
