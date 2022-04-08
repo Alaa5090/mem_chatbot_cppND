@@ -95,3 +95,16 @@ _chatLogic = std::make_unique<ChatLogic>();
 _chatLogic->SetPanelDialogHandle(this);
 
  _chatLogic->LoadAnswerGraphFromFile(dataPath + "src/answergraph.txt");
+}
+
+ChatBotPanelDialog::~ChatBotPanelDialog(){
+
+}
+void ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser){
+
+   ChatBotPanelDialogItem *item = new ChatBotPanelDialogItem(this, text, isFromUser);
+    _dialogSizer->Add(item, 0, wxALL | (isFromUser == true ? wxALIGN_LEFT : wxALIGN_RIGHT), 8);
+    _dialogSizer->Layout();
+
+}
+
