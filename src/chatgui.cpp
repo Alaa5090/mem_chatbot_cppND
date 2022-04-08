@@ -89,5 +89,5 @@ END_EVENT_TABLE()
  _dialogSizer = new wxBoxSizer(wxVERTICAL);
     this->SetSizer(_dialogSizer);
 
- wxInitAllImageHandlers();
-
+  wxInitAllImageHandlers();
+_chatLogic = std::make_unique<ChatLogic>();
