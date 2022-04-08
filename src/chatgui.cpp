@@ -106,5 +106,9 @@ void ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser){
     _dialogSizer->Add(item, 0, wxALL | (isFromUser == true ? wxALIGN_LEFT : wxALIGN_RIGHT), 8);
     _dialogSizer->Layout();
 
+     this->FitInside(); // ask the sizer about the needed size
+    this->SetScrollRate(5, 5);
+    this->Layout();
+
 }
 
