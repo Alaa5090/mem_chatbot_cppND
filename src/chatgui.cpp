@@ -159,6 +159,9 @@ _chatBotImg = new wxStaticBitmap(this, wxID_ANY, (isFromUser ? wxBitmap(imgBaseP
 
     _chatBotTxt->Wrap(150);
 
+    this->SetBackgroundColour((isFromUser == true ? wxT("YELLOW") : wxT("BLUE")));
+}
+
 
 
 
