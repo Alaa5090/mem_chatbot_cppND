@@ -110,5 +110,10 @@ void ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser){
     this->SetScrollRate(5, 5);
     this->Layout();
 
+    int dx, dy;
+    this->GetScrollPixelsPerUnit(&dx, &dy);
+    int sy = dy * this->GetScrollLines(wxVERTICAL);
+    this->DoScroll(0, sy);
+
 }
 
