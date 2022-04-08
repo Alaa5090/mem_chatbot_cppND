@@ -8,3 +8,6 @@
 
 const int width = 414;
 const int height = 736;
+
+IMPLEMENT_APP(ChatBotApp);
+
