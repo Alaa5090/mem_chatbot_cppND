@@ -68,3 +68,8 @@ void ChatBotFrameImagePanel::paintNow()
     wxClientDC dc(this);
     render(dc);
 }
+void ChatBotFrameImagePanel::render(wxDC &dc){
+
+    
+}
+
