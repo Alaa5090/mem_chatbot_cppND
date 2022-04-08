@@ -157,6 +157,8 @@ _chatBotImg = new wxStaticBitmap(this, wxID_ANY, (isFromUser ? wxBitmap(imgBaseP
     horzBoxSizer->Add(_chatBotImg, 2, wxEXPAND | wxALL, 1);
     this->SetSizer(horzBoxSizer);
 
+    _chatBotTxt->Wrap(150);
+
 
 
 
